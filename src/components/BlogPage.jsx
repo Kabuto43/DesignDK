@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { BlogCards } from "./BlogCards"
 import { Pagination } from "./Pagination"
+import { CategorySelection } from "./CategorySelection"
 
 
 export const BlogPage = () => {
@@ -39,7 +40,9 @@ export const BlogPage = () => {
 	return (
 		<div>
 			{/* category section */}
-			<div>Page Category</div>
+			<div>
+				<CategorySelection onSelectCategory={handleCategoryChange} selectedCategory={selectedCategory} activeCategory={activeCategory}/>
+			</div>
 
 			{/* BlogCards section */}
 			<div>
