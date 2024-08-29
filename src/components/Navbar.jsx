@@ -62,7 +62,15 @@ export const Navbar = () => {
 					{
 						navItems.map(({ path, link }) => (
 							<li className="text-black" key={path}>
-								<NavLink onClick={toggleMenu} to={path}>{link}</NavLink>
+								<NavLink className={({ isActive, isPending }) =>
+									isActive
+										? "active"
+										: isPending
+											? "pending"
+											: ""
+								}
+									onClick={toggleMenu} to={path}>{link}
+								</NavLink>
 							</li>
 						))
 					}
