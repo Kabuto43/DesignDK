@@ -62,7 +62,7 @@ export const Navbar = () => {
 					{
 						navItems.map(({ path, link }) => (
 							<li className="text-black" key={path}>
-								<NavLink to={path}>{link}</NavLink>
+								<NavLink onClick={toggleMenu} to={path}>{link}</NavLink>
 							</li>
 						))
 					}
