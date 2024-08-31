@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 
 // react icons
 import { FaBars, FaDribbble, FaFacebook, FaTwitter, FaXmark } from "react-icons/fa6"
@@ -33,9 +33,9 @@ export const Navbar = () => {
 	return (
 		<header className="bg-black text-white fixed top-0 left-0 right-0">
 			<nav className="px-4 py-4 max-w-7xl mx-auto flex justify-between items-center">
-				<a href="/" className="text-xl font-bold text-white">
+				<Link to="/" className="text-xl font-bold text-white">
 					Design<span className="text-orange-500">DK</span>
-				</a>
+				</Link>
 
 				{/* navitems for lg devices*/}
 				<ul className="md:flex gap-12 text-lg hidden">

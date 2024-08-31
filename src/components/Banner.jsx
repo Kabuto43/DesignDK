@@ -10,7 +10,7 @@ export const Banner = () => {
 					Start your blog today and join a community of writers and readers who are passionate about sharing their stories and ideas. We offer everything you need to get started, from helpful tips and to tutorials
 				</p>
 				<div>
-					<Link to="/" className="font-medium hover:text-orange-500 inline-flex items-center py-1">
+					<Link to="/about" className="font-medium hover:text-orange-500 inline-flex items-center py-1">
 						Learn more <FaArrowRight className="mt-1 ml-2"/>
 					</Link>
 				</div>

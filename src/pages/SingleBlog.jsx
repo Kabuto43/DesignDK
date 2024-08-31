@@ -11,8 +11,6 @@ export const SingleBlog = () => {
 		published_date, reading_time, content
 	} = data[0]
 
-	console.log(data)
-
 	return (
 		<div>
 			<div className="py-40 bg-black text-center text-white px-4">
